@@ -20,7 +20,7 @@ import (
 	"text/template"
 	"time"
 
-	"github.com/omnicells/tlsfiber/bytebufferpool"
+	"github.com/omnicells/tlsfiber/internal/bytebufferpool"
 	"github.com/omnicells/tlsfiber/internal/encoding/json"
 	"github.com/omnicells/tlsfiber/internal/schema"
 	"github.com/omnicells/tlsfiber/utils"
