@@ -23,9 +23,9 @@ import (
 	"sync"
 	"time"
 
-	"github.com/gofiber/fiber/v2/internal/colorable"
-	"github.com/gofiber/fiber/v2/internal/isatty"
-	"github.com/gofiber/fiber/v2/utils"
+	"github.com/omnicells/tlsfiber/internal/colorable"
+	"github.com/omnicells/tlsfiber/internal/isatty"
+	"github.com/omnicells/tlsfiber/utils"
 
 	"github.com/omnicells/fasthttp"
 )

@@ -20,10 +20,10 @@ import (
 	"text/template"
 	"time"
 
-	"github.com/gofiber/fiber/v2/internal/bytebufferpool"
-	"github.com/gofiber/fiber/v2/internal/encoding/json"
-	"github.com/gofiber/fiber/v2/internal/schema"
-	"github.com/gofiber/fiber/v2/utils"
+	"github.com/omnicells/tlsfiber/bytebufferpool"
+	"github.com/omnicells/tlsfiber/encoding/json"
+	"github.com/omnicells/tlsfiber/internal/schema"
+	"github.com/omnicells/tlsfiber/utils"
 	"github.com/omnicells/fasthttp"
 )
 
