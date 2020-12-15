@@ -7,7 +7,7 @@ import (
 // go:generate msgp
 // msgp -file="data.go" -o="data_msgp.go" -tests=false -unexported
 // don't forget to replace the msgp import path to:
-// "github.com/gofiber/fiber/v2/internal/msgp"
+// "github.com/omnicells/tlsfiber/internal/msgp"
 type data struct {
 	sync.RWMutex `gotiny:"-"`
 	d            map[string]interface{} `gotiny:"d"`

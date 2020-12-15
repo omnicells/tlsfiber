@@ -10,7 +10,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/gofiber/fiber/v2/utils"
+	"github.com/omnicells/tlsfiber/utils"
 )
 
 // routeParser holds the path segments and param names

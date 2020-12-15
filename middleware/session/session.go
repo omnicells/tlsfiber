@@ -4,9 +4,9 @@ import (
 	"sync"
 	"time"
 
-	"github.com/gofiber/fiber/v2"
-	"github.com/gofiber/fiber/v2/internal/gotiny"
-	"github.com/gofiber/fiber/v2/utils"
+	"github.com/omnicells/tlsfiber"
+	"github.com/omnicells/tlsfiber/internal/gotiny"
+	"github.com/omnicells/tlsfiber/utils"
 	"github.com/omnicells/fasthttp"
 )
 

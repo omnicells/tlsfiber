@@ -5,7 +5,7 @@ import (
 	"encoding/json"
 	"net"
 
-	"github.com/gofiber/fiber/v2/internal/gopsutil/common"
+	"github.com/omnicells/tlsfiber/internal/gopsutil/common"
 )
 
 var invoke common.Invoker = common.Invoke{}

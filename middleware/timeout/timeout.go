@@ -5,7 +5,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/gofiber/fiber/v2"
+	"github.com/omnicells/tlsfiber"
 )
 
 var once sync.Once

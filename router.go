@@ -11,7 +11,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/gofiber/fiber/v2/utils"
+	"github.com/omnicells/tlsfiber/utils"
 	"github.com/omnicells/fasthttp"
 )
 

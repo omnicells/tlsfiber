@@ -9,7 +9,7 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/gofiber/fiber/v2"
+	"github.com/omnicells/tlsfiber"
 )
 
 func getFileExtension(path string) string {

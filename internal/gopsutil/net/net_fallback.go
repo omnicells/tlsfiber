@@ -5,7 +5,7 @@ package net
 import (
 	"context"
 
-	"github.com/gofiber/fiber/v2/internal/gopsutil/common"
+	"github.com/omnicells/tlsfiber/internal/gopsutil/common"
 )
 
 func IOCounters(pernic bool) ([]IOCountersStat, error) {

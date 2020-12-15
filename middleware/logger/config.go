@@ -5,7 +5,7 @@ import (
 	"os"
 	"time"
 
-	"github.com/gofiber/fiber/v2"
+	"github.com/omnicells/tlsfiber"
 )
 
 // Config defines the config for middleware.

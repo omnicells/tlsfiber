@@ -3,9 +3,9 @@ package session
 import (
 	"sync"
 
-	"github.com/gofiber/fiber/v2"
-	"github.com/gofiber/fiber/v2/internal/gotiny"
-	"github.com/gofiber/fiber/v2/internal/storage/memory"
+	"github.com/omnicells/tlsfiber"
+	"github.com/omnicells/tlsfiber/internal/gotiny"
+	"github.com/omnicells/tlsfiber/internal/storage/memory"
 )
 
 type Store struct {

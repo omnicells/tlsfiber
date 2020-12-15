@@ -23,8 +23,8 @@ func New(config ...Config) fiber.Handler
 First ensure the appropriate packages are imported
 ```go
 import (
-	"github.com/gofiber/fiber/v2"
-	"github.com/gofiber/fiber/v2/middleware/logger"
+	"github.com/omnicells/tlsfiber"
+	"github.com/omnicells/tlsfiber/middleware/logger"
 )
 ```
 

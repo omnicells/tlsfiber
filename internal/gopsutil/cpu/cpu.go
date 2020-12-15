@@ -10,7 +10,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/gofiber/fiber/v2/internal/gopsutil/common"
+	"github.com/omnicells/tlsfiber/internal/gopsutil/common"
 )
 
 // TimesStat contains the amounts of time the CPU has spent performing different

@@ -4,9 +4,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/gofiber/fiber/v2"
-	"github.com/gofiber/fiber/v2/internal/storage/memory"
-	"github.com/gofiber/fiber/v2/utils"
+	"github.com/omnicells/tlsfiber"
+	"github.com/omnicells/tlsfiber/internal/storage/memory"
+	"github.com/omnicells/tlsfiber/utils"
 	"github.com/omnicells/fasthttp"
 )
 

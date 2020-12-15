@@ -11,7 +11,7 @@ import (
 	"fmt"
 	"io"
 
-	"github.com/gofiber/fiber/v2/internal/bytebufferpool"
+	"github.com/omnicells/tlsfiber/internal/bytebufferpool"
 )
 
 // ExecuteFunc calls f on each template tag (placeholder) occurrence.

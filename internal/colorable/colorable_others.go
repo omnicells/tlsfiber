@@ -7,7 +7,7 @@ import (
 	"io"
 	"os"
 
-	_ "github.com/gofiber/fiber/v2/internal/isatty"
+	_ "github.com/omnicells/tlsfiber/internal/isatty"
 )
 
 // NewColorable returns new instance of Writer which handles escape sequence.

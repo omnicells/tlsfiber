@@ -1,4 +1,4 @@
-module github.com/gofiber/fiber/v2
+module github.com/omnicells/tlsfiber
 
 go 1.14
 

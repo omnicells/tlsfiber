@@ -10,11 +10,11 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/gofiber/fiber/v2"
-	"github.com/gofiber/fiber/v2/internal/bytebufferpool"
-	"github.com/gofiber/fiber/v2/internal/colorable"
-	"github.com/gofiber/fiber/v2/internal/fasttemplate"
-	"github.com/gofiber/fiber/v2/internal/isatty"
+	"github.com/omnicells/tlsfiber"
+	"github.com/omnicells/tlsfiber/internal/bytebufferpool"
+	"github.com/omnicells/tlsfiber/internal/colorable"
+	"github.com/omnicells/tlsfiber/internal/fasttemplate"
+	"github.com/omnicells/tlsfiber/internal/isatty"
 	"github.com/omnicells/fasthttp"
 )
 

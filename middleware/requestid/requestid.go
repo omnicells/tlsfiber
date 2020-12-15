@@ -1,7 +1,7 @@
 package requestid
 
 import (
-	"github.com/gofiber/fiber/v2"
+	"github.com/omnicells/tlsfiber"
 )
 
 // New creates a new middleware handler

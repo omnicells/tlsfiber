@@ -9,7 +9,7 @@ import (
 	"syscall"
 	"unsafe"
 
-	"github.com/gofiber/fiber/v2/internal/wmi"
+	"github.com/omnicells/tlsfiber/internal/wmi"
 	"golang.org/x/sys/windows"
 )
 

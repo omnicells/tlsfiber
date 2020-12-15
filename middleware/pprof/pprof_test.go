@@ -2,8 +2,8 @@ package pprof
 
 import (
 	"bytes"
-	"github.com/gofiber/fiber/v2"
-	"github.com/gofiber/fiber/v2/utils"
+	"github.com/omnicells/tlsfiber"
+	"github.com/omnicells/tlsfiber/utils"
 	"io/ioutil"
 	"net/http/httptest"
 	"testing"

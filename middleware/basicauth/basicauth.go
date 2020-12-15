@@ -4,8 +4,8 @@ import (
 	"encoding/base64"
 	"strings"
 
-	"github.com/gofiber/fiber/v2"
-	"github.com/gofiber/fiber/v2/utils"
+	"github.com/omnicells/tlsfiber"
+	"github.com/omnicells/tlsfiber/utils"
 )
 
 // New creates a new middleware handler

@@ -4,8 +4,8 @@ import (
 	"bytes"
 	"hash/crc32"
 
-	"github.com/gofiber/fiber/v2"
-	"github.com/gofiber/fiber/v2/internal/bytebufferpool"
+	"github.com/omnicells/tlsfiber"
+	"github.com/omnicells/tlsfiber/internal/bytebufferpool"
 )
 
 var normalizedHeaderETag = []byte("Etag")

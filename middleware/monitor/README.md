@@ -16,8 +16,8 @@ package main
 import (
 	"log"
 
-	"github.com/gofiber/fiber/v2"
-	"github.com/gofiber/fiber/v2/middleware/monitor"
+	"github.com/omnicells/tlsfiber"
+	"github.com/omnicells/tlsfiber/middleware/monitor"
 )
 
 func main() {

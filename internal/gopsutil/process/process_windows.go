@@ -11,9 +11,9 @@ import (
 	"syscall"
 	"unsafe"
 
-	"github.com/gofiber/fiber/v2/internal/gopsutil/common"
-	cpu "github.com/gofiber/fiber/v2/internal/gopsutil/cpu"
-	net "github.com/gofiber/fiber/v2/internal/gopsutil/net"
+	"github.com/omnicells/tlsfiber/internal/gopsutil/common"
+	cpu "github.com/omnicells/tlsfiber/internal/gopsutil/cpu"
+	net "github.com/omnicells/tlsfiber/internal/gopsutil/net"
 	"golang.org/x/sys/windows"
 )
 

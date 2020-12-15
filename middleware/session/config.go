@@ -3,8 +3,8 @@ package session
 import (
 	"time"
 
-	"github.com/gofiber/fiber/v2"
-	"github.com/gofiber/fiber/v2/utils"
+	"github.com/omnicells/tlsfiber"
+	"github.com/omnicells/tlsfiber/utils"
 )
 
 // Config defines the config for middleware.

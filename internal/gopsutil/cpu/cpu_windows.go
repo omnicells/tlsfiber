@@ -7,8 +7,8 @@ import (
 	"fmt"
 	"unsafe"
 
-	"github.com/gofiber/fiber/v2/internal/gopsutil/common"
-	"github.com/gofiber/fiber/v2/internal/wmi"
+	"github.com/omnicells/tlsfiber/internal/gopsutil/common"
+	"github.com/omnicells/tlsfiber/internal/wmi"
 	"golang.org/x/sys/windows"
 )
 

@@ -1,7 +1,7 @@
 package logger
 
 import (
-	"github.com/gofiber/fiber/v2"
+	"github.com/omnicells/tlsfiber"
 )
 
 func methodColor(method string) string {

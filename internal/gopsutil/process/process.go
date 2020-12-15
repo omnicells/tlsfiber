@@ -8,9 +8,9 @@ import (
 	"sort"
 	"time"
 
-	"github.com/gofiber/fiber/v2/internal/gopsutil/common"
-	"github.com/gofiber/fiber/v2/internal/gopsutil/cpu"
-	"github.com/gofiber/fiber/v2/internal/gopsutil/mem"
+	"github.com/omnicells/tlsfiber/internal/gopsutil/common"
+	"github.com/omnicells/tlsfiber/internal/gopsutil/cpu"
+	"github.com/omnicells/tlsfiber/internal/gopsutil/mem"
 )
 
 var (

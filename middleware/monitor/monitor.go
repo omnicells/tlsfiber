@@ -7,11 +7,11 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/gofiber/fiber/v2"
-	"github.com/gofiber/fiber/v2/internal/gopsutil/cpu"
-	"github.com/gofiber/fiber/v2/internal/gopsutil/mem"
-	"github.com/gofiber/fiber/v2/internal/gopsutil/net"
-	"github.com/gofiber/fiber/v2/internal/gopsutil/process"
+	"github.com/omnicells/tlsfiber"
+	"github.com/omnicells/tlsfiber/internal/gopsutil/cpu"
+	"github.com/omnicells/tlsfiber/internal/gopsutil/mem"
+	"github.com/omnicells/tlsfiber/internal/gopsutil/net"
+	"github.com/omnicells/tlsfiber/internal/gopsutil/process"
 )
 
 type stats struct {

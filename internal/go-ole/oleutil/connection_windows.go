@@ -7,7 +7,7 @@ import (
 	"syscall"
 	"unsafe"
 
-	ole "github.com/gofiber/fiber/v2/internal/go-ole"
+	ole "github.com/omnicells/tlsfiber/internal/go-ole"
 )
 
 // ConnectObject creates a connection point between two services for communication.

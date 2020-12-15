@@ -7,8 +7,8 @@ import (
 
 	"github.com/omnicells/fasthttp"
 
-	"github.com/gofiber/fiber/v2"
-	"github.com/gofiber/fiber/v2/utils"
+	"github.com/omnicells/tlsfiber"
+	"github.com/omnicells/tlsfiber/utils"
 )
 
 // go test -run Test_ETag_Next
