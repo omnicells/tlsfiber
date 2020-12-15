@@ -25,8 +25,8 @@ import (
 	"text/template"
 	"time"
 
-	"github.com/gofiber/fiber/v2/internal/bytebufferpool"
-	"github.com/gofiber/fiber/v2/utils"
+	"github.com/omnicells/tlsfiber/internal/bytebufferpool"
+	"github.com/omnicells/tlsfiber/utils"
 	"github.com/omnicells/fasthttp"
 )
 
