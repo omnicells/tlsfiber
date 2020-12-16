@@ -1,7 +1,7 @@
 package fiber
 
 import (
-	"crypto/tls"
+	"github.com/omnicells/crypto/tls"
 	"fmt"
 	"net"
 	"os"
@@ -10,8 +10,8 @@ import (
 	"strconv"
 	"strings"
 	"time"
-
-	"github.com/valyala/fasthttp/reuseport"
+	
+	"github.com/omnicells/fasthttp/reuseport"
 )
 
 const (
