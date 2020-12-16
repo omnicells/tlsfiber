@@ -4,7 +4,7 @@ import (
 	"strings"
 
 	"github.com/omnicells/tlsfiber"
-	"github.com/valyala/fasthttp/expvarhandler"
+	"github.com/omnicells/fasthttp/expvarhandler"
 )
 
 // New creates a new middleware handler

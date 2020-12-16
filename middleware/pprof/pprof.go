@@ -5,7 +5,7 @@ import (
 	"strings"
 
 	"github.com/omnicells/tlsfiber"
-	"github.com/valyala/fasthttp/fasthttpadaptor"
+	"github.com/omnicells/fasthttp/fasthttpadaptor"
 )
 
 // Set pprof adaptors
