@@ -5,7 +5,7 @@
 package fiber
 
 import (
-	"crypto/tls"
+	"github.com/omnicells/crypto/tls"
 	"io/ioutil"
 	"os"
 	"testing"

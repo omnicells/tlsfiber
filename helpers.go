@@ -6,7 +6,7 @@ package fiber
 
 import (
 	"bytes"
-	"crypto/tls"
+	"github.com/omnicells/crypto/tls"
 	"fmt"
 	"hash/crc32"
 	"io"

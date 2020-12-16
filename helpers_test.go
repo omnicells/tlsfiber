@@ -5,7 +5,7 @@
 package fiber
 
 import (
-	"crypto/tls"
+	"github.com/omnicells/crypto/tls"
 	"fmt"
 	"net"
 	"strings"

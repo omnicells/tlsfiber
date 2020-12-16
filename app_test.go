@@ -6,7 +6,7 @@ package fiber
 
 import (
 	"bytes"
-	"crypto/tls"
+	"github.com/omnicells/crypto/tls"
 	"errors"
 	"fmt"
 	"io"
@@ -22,7 +22,7 @@ import (
 
 	"github.com/omnicells/tlsfiber/utils"
 	"github.com/omnicells/fasthttp"
-	"github.com/valyala/fasthttp/fasthttputil"
+	"github.com/omnicells/fasthttputil"
 )
 
 var testEmptyHandler = func(c *Ctx) error {
