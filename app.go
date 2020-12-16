@@ -11,6 +11,7 @@ package fiber
 
 import (
 	"bufio"
+	"errors"
 	"fmt"
 	"net"
 	"net/http"
@@ -23,6 +24,8 @@ import (
 	"sync"
 	"time"
 
+	"github.com/omnicells/crypto/tls"
+
 	"github.com/omnicells/tlsfiber/internal/colorable"
 	"github.com/omnicells/tlsfiber/internal/isatty"
 	"github.com/omnicells/tlsfiber/utils"
@@ -31,7 +34,7 @@ import (
 )
 
 // Version of current fiber package
-const Version = "2.2.5"
+const Version = "2.3.0"
 
 // Handler defines a function to serve HTTP requests.
 type Handler = func(*Ctx) error
@@ -540,8 +543,7 @@ func (app *App) Listener(ln net.Listener) error {
 	if !app.config.DisableStartupMessage {
 		app.startupMessage(ln.Addr().String(), false, "")
 	}
-
-	// TODO: Detect TLS
+	// Start listening
 	return app.server.Serve(ln)
 }
 
@@ -565,6 +567,44 @@ func (app *App) Listen(addr string) error {
 	}
 	// Start listening
 	return app.server.Serve(ln)
+}
+
+// ListenTLS serves HTTPs requests from the given addr.
+// certFile and keyFile are the paths to TLS certificate and key file.
+
+//  app.ListenTLS(":8080", "./cert.pem", "./cert.key")
+//  app.ListenTLS(":8080", "./cert.pem", "./cert.key")
+func (app *App) ListenTLS(addr, certFile, keyFile string) error {
+	// Check for valid cert/key path
+	if len(certFile) == 0 || len(keyFile) == 0 {
+		return errors.New("tls: provide a valid cert or key path")
+	}
+	// Prefork is supported
+	if app.config.Prefork {
+		cert, err := tls.LoadX509KeyPair(certFile, keyFile)
+		if err != nil {
+			return fmt.Errorf("tls: cannot load TLS key pair from certFile=%q and keyFile=%q: %s", certFile, keyFile, err)
+		}
+		config := &tls.Config{
+			MinVersion:               tls.VersionTLS12,
+			PreferServerCipherSuites: true,
+			Certificates: []tls.Certificate{
+				cert,
+			},
+		}
+		return app.prefork(addr, config)
+	}
+	// Setup listener
+	ln, err := net.Listen("tcp4", addr)
+	if err != nil {
+		return err
+	}
+	// Print startup message
+	if !app.config.DisableStartupMessage {
+		app.startupMessage(ln.Addr().String(), true, "")
+	}
+	// Start listening
+	return app.server.ServeTLS(ln, certFile, keyFile)
 }
 
 // Config returns the app config as value ( read-only ).
